@@ -60,22 +60,22 @@
 
     <main>
       <section class="portfolio section">
-        <div class="container">
+        <div class="imposter">
           <h1 class="visually-hidden">Наші проєкти</h1>
-          <ul class="filter-items list">
-            <li class="item">
+          <ul class="filters list">
+            <li class="filters__item">
               <button type="button" class="btn-secondary">Усі</button>
             </li>
-            <li class="item">
+            <li class="filters__item">
               <button type="button" class="btn-secondary">Веб-сайти</button>
             </li>
-            <li class="item">
+            <li class="filters__item">
               <button type="button" class="btn-secondary">Додатки</button>
             </li>
-            <li class="item">
+            <li class="filters__item">
               <button type="button" class="btn-secondary">Дизайн</button>
             </li>
-            <li class="item">
+            <li class="filters__item">
               <button type="button" class="btn-secondary">Маркетинг</button>
             </li>
           </ul>
@@ -275,58 +275,60 @@
     </main>
 
     <!-- Підвал -->
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-info">
-          <a class="logo" href="./index.html">Web<span class="logo-text-footer">Studio</span></a>
-          <address class="footer-contacts">
-            <ul class="address-list list">
-              <li class="address-item">
+    <footer class="page-footer">
+      <div class="page-footer__content imposter">
+        <div class="page-footer__info">
+          <a class="logo logo--flat" href="./index.html"
+            >Web<span class="logo__text logo__text--inverse">Studio</span></a
+          >
+          <address class="company-address">
+            <ul class="company-address__list list">
+              <li class="company-address__item">
                 <a
-                  class="address-link"
+                  class="company-address__link company-address__link--grey"
                   href="https://goo.gl/maps/n3ZvedRcKPrbeR4S9"
                   target="_blank"
                   rel="noreferrer noopener nofollow"
                   >м. Київ, пр-т Лесі Українки, 26</a
                 >
               </li>
-              <li class="address-item">
-                <a class="footer-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              <li class="company-address__item">
+                <a class="company-address__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
               </li>
-              <li class="address-item">
-                <a class="footer-link" href="tel:+380961111111">+38 096 111 11 11</a>
+              <li class="company-address__item">
+                <a class="company-address__link" href="tel:+380961111111">+38 096 111 11 11</a>
               </li>
             </ul>
           </address>
         </div>
 
         <div class="join-us">
-          <p class="join-us-title capitalize">Приєднуйтесь</p>
-          <ul class="join-us-links list">
-            <li class="thumb">
-              <a class="social-link-footer" href="#">
-                <svg class="footer-icon" width="20" height="20">
+          <p class="join-us__title capitalize">Приєднуйтесь</p>
+          <ul class="social-media list">
+            <li class="social-media__item social-media__item--position--footer">
+              <a class="social-media__link social-media__link--grey" href="#">
+                <svg class="social-media__icon social-media__icon--white" width="20" height="20">
                   <use href="./images/sprite.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="thumb">
-              <a class="social-link-footer" href="#">
-                <svg class="footer-icon" width="20" height="20">
+            <li class="social-media__item social-media__item--position--footer">
+              <a class="social-media__link social-media__link--grey" href="#">
+                <svg class="social-media__icon social-media__icon--white" width="20" height="20">
                   <use href="./images/sprite.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="thumb">
-              <a class="social-link-footer" href="#">
-                <svg class="footer-icon" width="20" height="20">
+            <li class="social-media__item social-media__item--position--footer">
+              <a class="social-media__link social-media__link--grey" href="#">
+                <svg class="social-media__icon social-media__icon--white" width="20" height="20">
                   <use href="./images/sprite.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="thumb">
-              <a class="social-link-footer" href="#">
-                <svg class="footer-icon" width="20" height="20">
+            <li class="social-media__item social-media__item--position--footer">
+              <a class="social-media__link social-media__link--grey" href="#">
+                <svg class="social-media__icon social-media__icon--white" width="20" height="20">
                   <use href="./images/sprite.svg#icon-linkedin"></use>
                 </svg>
               </a>
@@ -335,12 +337,12 @@
         </div>
 
         <div class="subscribe">
-          <p class="subscribe-title capitalize">Підпишіться на розсилку</p>
+          <p class="subscribe__title capitalize">Підпишіться на розсилку</p>
           <form class="subscribe-form">
-            <input class="subscribe-input" name="subscribe-email" type="email" placeholder="E-mail" required />
-            <button class="btn-primary" type="submit">
+            <input class="subscribe-form__input" name="subscribe-email" type="email" placeholder="E-mail" required />
+            <button class="btn-primary btn-primary--positon-footer" type="submit">
               Підписатися
-              <svg class="send-icon" width="24" height="24">
+              <svg class="subscribe-form__icon" width="24" height="24">
                 <use href="./images/sprite.svg#icon-send"></use>
               </svg>
             </button>
