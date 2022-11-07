@@ -150,7 +150,7 @@ textarea {
   text-decoration: none;
 }
 
-.main-nav > .logo {
+.logo--position--page--header {
   display: block;
   margin-right: 93px;
 }
