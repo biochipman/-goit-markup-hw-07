@@ -1,3 +1,9 @@
 @import './abstracts/variables';
+@import './base/typography';
 @import './utils/utils';
-@import './components/logo.scss';
+@import './layout/page-header';
+@import './layout/logo';
+@import './layout/main-nav';
+@import './layout/nav-contacts';
+@import './layout/hero';
+@import './layout/btn-primary';
