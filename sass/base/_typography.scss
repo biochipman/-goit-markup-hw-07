@@ -46,3 +46,12 @@ textarea {
 .capitalize {
   text-transform: uppercase;
 }
+
+.section-title {
+  margin-bottom: 50px;
+
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+}
