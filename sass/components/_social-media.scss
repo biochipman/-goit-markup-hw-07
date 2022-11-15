@@ -1,6 +1,12 @@
 .social-media {
   display: flex;
   justify-content: center;
+
+  gap: 0 10px;
+
+  &__item {
+    gap: 0 10px;
+  }
 }
 
 .social-media__link {
@@ -36,8 +42,4 @@
   &--white {
     fill: $main-bgd-color;
   }
-}
-
-.social-media__item--position--footer:not(:last-child) {
-  margin-right: 10px;
 }

@@ -37,10 +37,6 @@
     color: $primary-logo-color;
   }
 
-  &--current {
-    color: $primary-logo-color;
-  }
-
   &--current::after {
     position: absolute;
     display: block;
@@ -54,4 +50,8 @@
     background-color: $btn-active-color;
     border-radius: 2px;
   }
+}
+
+.main-nav__link.main-nav__link--current {
+  color: $primary-logo-color;
 }

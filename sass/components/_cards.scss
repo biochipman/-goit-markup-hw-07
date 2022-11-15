@@ -14,27 +14,6 @@
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   }
 
-  &__overlay {
-    position: absolute;
-
-    top: 0;
-    left: 0;
-    width: 370px;
-    height: 294px;
-
-    background-color: $card-overlay-bgd-color;
-
-    opacity: 0;
-    transform: translateY(100%);
-    transition: transform $time-function;
-  }
-
-  &:hover &__overlay,
-  &:focus &__overlay {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
   &__text {
     position: absolute;
     top: 50%;
@@ -69,6 +48,28 @@
     color: $paragraph-color;
     font-size: 16px;
     line-height: calc(30 / 16);
+  }
+
+  &__overlay {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    width: 370px;
+    height: 294px;
+
+    background-color: $card-overlay-bgd-color;
+
+    opacity: 0;
+    transform: translateY(100%);
+
+    transition: transform $time-function, opacity $time-function;
+  }
+
+  &:hover &__overlay,
+  &:focus &__overlay {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
